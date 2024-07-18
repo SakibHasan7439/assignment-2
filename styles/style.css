@@ -216,6 +216,33 @@ nav {
 
 /* main-section */
 
+/* habit section */
+.habit-images {
+    text-align: center;
+}
+
+.habit-images img {
+    width: 100%;
+    margin-bottom: 1.2rem;
+    border-radius: 50%;
+    padding: 0px 12%;
+}
+
+.round-img-card {
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 1.1rem;
+    font-family: var(--primary-font-family);
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+.img-txt p {
+    padding: 0px 15%;
+}
+
 /* footer-section */
 
 
@@ -274,6 +301,20 @@ nav {
         width: 55%;
         margin: 0 auto;
     }
+
+    /* habit section */
+    .round-img-card {
+        width: 25%;
+    }
+
+    .habit-images {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .habit-images img {
+        width: 100%;
+    }
 }
 
 /* media query for tablet */
@@ -307,6 +348,19 @@ nav {
 
     .subtitle-padding {
         padding-right: 30%;
+    }
+
+    .habit-images {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .round-img-card {
+        width: 50%;
+    }
+
+    .image-text p {
+        padding: 0px 20%;
     }
 }
 
