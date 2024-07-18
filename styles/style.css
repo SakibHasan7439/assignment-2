@@ -309,3 +309,15 @@ nav {
         padding-right: 30%;
     }
 }
+
+/* media query for some smaller device */
+
+@media screen and (max-width: 380px) {
+    .primary-btn {
+        padding:  0.5rem 1.8rem;
+    }
+
+    .download-btn {
+        padding: 0.5rem 1.8rem;
+    }
+}
