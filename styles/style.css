@@ -11,7 +11,7 @@
     --primary-color: rgb(255, 255, 255);
     --secondary-color: rgba(255, 255, 255, 0.5);
     --primary-font-size: 0.87rem;
-    --secondary-font-size: 2rem;
+    --secondary-font-size: 2.8rem;
     --primary-background-color: rgb(230, 83, 60);
     --primary-font-weight: 900;
 }
@@ -35,6 +35,7 @@ body {
 
 h3 {
     margin: 0.4rem;
+    color: var(--primary-color);
 }
 
 /* sharing styles */
@@ -283,6 +284,12 @@ nav {
     border-radius: 1.1rem;
 }
 
+/* training and exercise style */
+
+.training-exercise {
+    margin-bottom: 3rem;
+}
+
 .training-images {
     display: flex;
     flex-wrap: wrap;
@@ -320,19 +327,14 @@ nav {
 .img-box4 {
     width: 40%;
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 5rem 4rem 1rem 1rem;
+    padding: 2rem 4rem 1rem 1rem;
     color: var(--primary-color);
 }
-
-/* .img-box4 p{
-    bottom: 1rem;
-    left: 1rem;
-} */
 
 .img-box5 {
     width: 60%;
     background-color: rgba(213, 253, 152, 0.744);
-    padding: 5rem 4rem 1rem 1rem;
+    padding: 2rem 4rem 1rem 1rem;
     color: var(--primary-color);
 }
 
@@ -341,10 +343,59 @@ nav {
     display: none;
 }
 
+/* BMI calculator section style */
+.BMI-calculator {
+    background-color: rgba(220, 222, 225, 0.1);
+    padding: 2rem;
+    color: var(--primary-color);
+}
+
+.calculator-chert {
+    margin-bottom: 3rem;
+}
+
+table, td, th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+
+td {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.input-section input, select {
+    width: calc(50% - 1rem);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.8rem 2rem 0.8rem 1.2rem;
+    border: none;
+    color: var(--secondary-color);
+}
+
+.max-width {
+    width: 100%;
+}
+
+select option {
+    color: #000000;
+    font-weight: 500;
+    font-family: var(--primary-font-family);
+}
+
+
 /* footer-section */
 
-
 /* media query starts from here */
+
+/* media query for desktop device */
 
 @media screen and (min-width: 993px) {
 
@@ -433,6 +484,29 @@ nav {
         font-size: 1rem;
     }
 
+    /* BMI calculation  */
+
+    .BMI-calculator {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .calculator-chert {
+        width: 50%;
+    }
+
+    .calculate-BMI {
+        width: 50%;
+    }
+
+    .BMI-heading {
+        padding: 2rem 20%;
+    }
+}
+
+/* media query both for tablet and desktop */
+@media screen and (min-width: 576px) {
+
     .training-images {
         flex-wrap: wrap;
     }
@@ -516,6 +590,7 @@ nav {
         color: var(--primary-color);
         left: 1rem;
     }
+
 }
 
 /* media query for tablet */
@@ -601,89 +676,7 @@ nav {
         font-size: 1rem;
     }
 
-    .training-images {
-        flex-wrap: wrap;
-    }
 
-    .training-images img {
-        height: 200px;
-    }
-
-    .img-box1 {
-        width: 20%;
-        background-color: rgb(141, 218, 218);
-        color: var(--primary-color);
-        height: 200px;
-    }
-    
-    .img-box1 p {
-        top: 1rem;
-        left: 1rem;
-    }
-    
-    .img-box2 {
-        width: 50%;
-        color: var(--primary-color);
-        background-image: rgba(255, 0, 0, 0.3);
-    }
-    
-    .img-box2 img {
-        width: 100%;
-    }
-    
-    .img-box2 p{
-        top: 1rem;
-        left: 1rem;
-    }
-    
-    .img-box3 {
-        width: 30%;
-        display: block;
-    }
-
-    .img-box3 img {
-        width: 100%;
-        filter: brightness(70%);
-    }
-
-    .img-box3 p {
-        bottom: 0;
-        color: var(--primary-color);
-        left: 1rem;
-    }
-    
-    .img-box4 {
-        width: 45%;
-        background-color: rgba(255, 255, 255, 0.5);
-        padding: 5rem 4rem 1rem 1rem;
-        color: var(--primary-color);
-        height: 200px;
-    }
-
-    .img-box5 {
-        width: 20%;
-        background-color: rgba(213, 253, 152, 0.744);
-        padding: 5rem 4rem 1rem 1rem;
-        color: var(--primary-color);
-        height: 200px;
-    }
-    
-    
-    .img-box6{
-        display: block;
-        width: 35%;
-    }
-
-    .img-box6 img {
-        width: 100%;
-        filter: brightness(70%);
-    }
-
-    .img-box6 p {
-        bottom: 1rem;
-        color: var(--primary-color);
-        left: 1rem;
-    }
 }
 
 /* media query for some smaller device */
