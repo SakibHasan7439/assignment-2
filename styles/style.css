@@ -299,4 +299,13 @@ nav {
     .free-video {
         left: 52%;
     }
+
+    .btn-container {
+        row-gap: 0px;
+        justify-content: left;
+    }
+
+    .subtitle-padding {
+        padding-right: 30%;
+    }
 }
