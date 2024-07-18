@@ -33,6 +33,10 @@ body {
     font-family: var(--primary-font-family);
 }
 
+h3 {
+    margin: 0.4rem;
+}
+
 /* sharing styles */
 
 a {
@@ -43,12 +47,14 @@ a {
     font-size: var(--secondary-font-size);
     font-weight: var(--primary-font-weight);
     color: var(--primary-color);
+    text-transform: capitalize;
 }
 
 .section-subtitle {
     font-size: var(--primary-font-size);
     font-weight: normal;
     color: var(--secondary-color);
+    line-height: 1.5rem;
 }
 
 .primary-btn {
@@ -243,6 +249,31 @@ nav {
     padding: 0px 15%;
 }
 
+/* run an extra section style */
+.run-an-extra {
+    margin: 0px 1.2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 1.7rem 1.8rem 1.8rem 1.8rem;
+    border-radius: 1.1rem;
+}
+
+.text-container {
+    margin-bottom: 1.8rem;
+}
+
+.text-container button{
+    width: 100%;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: var(--primary-font-weight);
+    margin-top: 0.8rem;
+}
+
+.run-an-extra img {
+    width: 100%;
+    border-radius: 1.1rem;
+}
+
 /* footer-section */
 
 
@@ -315,6 +346,25 @@ nav {
     .habit-images img {
         width: 100%;
     }
+
+    /* run an extra section style */
+    .run-an-extra {
+        display: flex;
+        gap: 9%;
+    }
+
+    .text-container {
+        width: 50%;
+    }
+
+    .run-an-extra img {
+        width: 50%;
+    }
+
+    .text-container button {
+        width: 50%;
+        font-size: 1rem;
+    }
 }
 
 /* media query for tablet */
@@ -361,6 +411,24 @@ nav {
 
     .image-text p {
         padding: 0px 20%;
+    }
+
+    .run-an-extra {
+        display: flex;
+        gap: 9%;
+    }
+
+    .text-container {
+        width: 50%;
+    }
+
+    .run-an-extra img {
+        width: 50%;
+    }
+
+    .text-container button {
+        width: 70%;
+        font-size: 1rem;
     }
 }
 
