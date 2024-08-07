@@ -543,6 +543,8 @@ select option {
     color: var(--secondary-color);
     font-size: var(--primary-font-size);
     font-family: var(--primary-font-family);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .footer-title {
@@ -555,6 +557,10 @@ select option {
 
 .reserve-text {
     text-align: center;
+}
+
+.horizontal-line {
+    margin: 1rem 0px;
 }
 /* media query starts from here */
 
@@ -840,6 +846,10 @@ select option {
     .member-info {
         top: 10rem;
         left: 2rem;
+    }
+
+    .horizontal-line {
+        margin: 4rem 0px;
     }
 }
 
